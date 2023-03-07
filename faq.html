@@ -1,0 +1,407 @@
+<!DOCTYPE html>
+<html lang="en" data-template-name="FaqPage">
+  <head>
+    <meta charset="UTF-8">
+    <title>FaqPage</title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="SKYPE_TOOLBAR" content="SKYPE_TOOLBAR_PARSER_COMPATIBLE">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="format-detection" content="telephone=no">
+    <link rel="shortcut icon" href="images/favicon.ico">
+    <link rel="icon" sizes="16x16 32x32 64x64" href="images/favicon.ico">
+    <link rel="icon" type="image/png" sizes="196x196" href="/favicon-192.png">
+    <link rel="icon" type="image/png" sizes="160x160" href="/favicon-160.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="/favicon-96.png">
+    <link rel="icon" type="image/png" sizes="64x64" href="/favicon-64.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16.png">
+    <link rel="apple-touch-icon" href="/favicon-57.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="/favicon-114.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="/favicon-72.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="/favicon-144.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="/favicon-60.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="/favicon-120.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="/favicon-76.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="/favicon-152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="/favicon-180.png">
+    <meta name="msapplication-TileColor" content="#FFFFFF">
+    <meta name="msapplication-TileImage" content="/favicon-144.png">
+    <meta name="msapplication-config" content="/browserconfig.xml">
+  <link href="css/app.css" rel="stylesheet"></head>
+  <body>
+    <div class="preloader"></div>
+    <header class="header">
+      <div class="header_in lockPadding">
+        <div class="header__row">
+          <div class="header__column"><a class="header_logo" href="./index.html"><img class="header_logo__in" src="./images/logo.svg" alt="Logo"></a></div>
+          <div class="header__column">
+            <ul class="header_list">
+              <li class="header_list__item"><a class="header_list__link menuTrigger" href="#" data-filter="0">Женщины</a></li>
+              <li class="header_list__item"><a class="header_list__link menuTrigger header_list__link--invisible_mod" href="#" data-filter="1">Мужчины</a></li>
+              <li class="header_list__item">
+                <form class="header_list__form" action="#">
+                  <div class="header_list__input">
+                    <label class="header_list__link header_list__link--search_mod" for="search_input">поиск</label>
+                    <div class="header_list__field">
+                      <input class="form_input__element" type="text" id="search_input">
+                    </div>
+                  </div>
+                </form>
+              </li>
+            </ul>
+          </div>
+          <div class="header__column">
+            <div class="header__wrap">
+              <div class="header_languages">
+                <ul class="header_languages__list"> 
+                  <li class="header_languages__item"> <a class="header_languages__link header_languages__link--active_state" href="#">ru</a></li>
+                  <li class="header_languages__item"> <a class="header_languages__link" href="#">ua</a></li>
+                  <li class="header_languages__item"> <a class="header_languages__link" href="#">en</a></li>
+                </ul>
+              </div>
+              <div class="header_actions">
+                <ul class="header_actions__list">
+                  <li class="header_actions__item"><a class="header_actions__link popupOpen" href="#popup_login" aria-label="Login account">
+                      <svg class="icon icon_user icon--size_mod">
+                        <use xlink:href="images/sprite/sprite.svg#user"></use>
+                      </svg></a></li>
+                  <li class="header_actions__item"><a class="header_actions__link" href="#" aria-label="Wishlist">
+                      <svg class="icon icon_heart icon--size_mod">
+                        <use xlink:href="images/sprite/sprite.svg#heart"></use>
+                      </svg></a></li>
+                  <li class="header_actions__item"><a class="header_actions__link" href="#" aria-label="cart">
+                      <svg class="icon icon_bag icon--size_mod">
+                        <use xlink:href="images/sprite/sprite.svg#bag"></use>
+                      </svg></a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="header__column header__column--mob_mod">
+            <button class="header__menu_trigger menuTrigger" type="button" aria-label="Menu trigger"></button>
+          </div>
+        </div>
+      </div>
+      <div class="header__body">
+        <div class="header__content">
+          <div class="header__decor header__decor--mod_1"></div>
+          <div class="header__decor header__decor--mod_2"></div>
+          <div class="header__decor header__decor--mod_3"></div>
+          <div class="header__decor header__decor--mod_4"></div>
+          <div class="header__top">
+            <div class="header__items">
+              <div class="header__item">
+                <ul class="header_list">
+                  <li class="header_list__item"><a class="header_list__link menuTrigger" href="#" data-filter="0">Женщины</a></li>
+                  <li class="header_list__item"><a class="header_list__link menuTrigger header_list__link--invisible_mod" href="#" data-filter="1">Мужчины</a></li>
+                  <li class="header_list__item">
+                    <form class="header_list__form header_list__form--tablet_mod" action="#">
+                      <div class="header_list__input">
+                        <label class="header_list__link header_list__link--search_mod" for="search_input_tablet">поиск</label>
+                        <div class="header_list__field">
+                          <input class="form_input__element" type="text" id="search_input_tablet">
+                        </div>
+                      </div>
+                    </form>
+                  </li>
+                </ul>
+              </div>
+              <div class="header__item">
+                <div class="header_languages header_languages--tablet_mod">
+                  <ul class="header_languages__list"> 
+                    <li class="header_languages__item"> <a class="header_languages__link header_languages__link--active_state" href="#">ru</a></li>
+                    <li class="header_languages__item"> <a class="header_languages__link" href="#">ua</a></li>
+                    <li class="header_languages__item"> <a class="header_languages__link" href="#">en</a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="header_menu">
+            <div class="header_menu__body filterItem" data-filter="0">
+              <ul class="header_menu__list">
+                <li class="header_menu__item">
+                  <div class="header_menu__head"><a class="header_menu__label" href="#">ОДЕЖДА</a>
+                    <div class="header_menu__icon accTriger"></div>
+                    <ul class="header_menu__sublist accContent">
+                      <li class="header_menu__subitem"><a class="header_menu__link" href="#">Свитшоты и худи</a></li>
+                      <li class="header_menu__subitem"><a class="header_menu__link" href="#">Платья юбки</a></li>
+                      <li class="header_menu__subitem"><a class="header_menu__link" href="#">Футболки и топы</a></li>
+                      <li class="header_menu__subitem"><a class="header_menu__link" href="#">Брюки и шорты</a></li>
+                      <li class="header_menu__subitem"><a class="header_menu__link" href="#">Рубашки</a></li>
+                      <li class="header_menu__subitem"><a class="header_menu__link" href="#">Комбинезоны</a></li>
+                      <li class="header_menu__subitem"><a class="header_menu__link" href="#">Леггинсы</a></li>
+                      <li class="header_menu__subitem"><a class="header_menu__link" href="#">Куртки</a></li>
+                      <li class="header_menu__subitem"><a class="header_menu__link" href="#">Пальто</a></li>
+                      <li class="header_menu__subitem"><a class="header_menu__link" href="#">Плащи</a></li>
+                      <li class="header_menu__subitem"><a class="header_menu__link" href="#">Жилетки</a></li>
+                      <li class="header_menu__subitem"><a class="header_menu__link" href="#">Ветровки</a></li>
+                    </ul>
+                  </div>
+                </li>
+                <li class="header_menu__item">
+                  <div class="header_menu__head"><a class="header_menu__label" href="#">ОБУВЬ</a>
+                    <div class="header_menu__icon accTriger"></div>
+                    <ul class="header_menu__sublist accContent">
+                      <li class="header_menu__subitem"><a class="header_menu__link" href="#">Кроссовки</a></li>
+                      <li class="header_menu__subitem"><a class="header_menu__link" href="#">Шлепанцы</a></li>
+                    </ul>
+                  </div>
+                </li>
+                <li class="header_menu__item">
+                  <div class="header_menu__head"><a class="header_menu__label" href="#">СУМКИ</a>
+                    <div class="header_menu__icon accTriger"></div>
+                    <ul class="header_menu__sublist accContent">
+                      <li class="header_menu__subitem"><a class="header_menu__link" href="#">Сумки</a></li>
+                      <li class="header_menu__subitem"><a class="header_menu__link" href="#">Рюкзаки</a></li>
+                      <li class="header_menu__subitem"><a class="header_menu__link" href="#">Кросс-боди</a></li>
+                      <li class="header_menu__subitem"><a class="header_menu__link" href="#">Поясные</a></li>
+                      <li class="header_menu__subitem"><a class="header_menu__link" href="#">Спортивные</a></li>
+                      <li class="header_menu__subitem"><a class="header_menu__link" href="#">Шоперы</a></li>
+                    </ul>
+                  </div>
+                </li>
+                <li class="header_menu__item">
+                  <div class="header_menu__head"><a class="header_menu__label" href="#">AKCЕССУАРЫ</a>
+                    <div class="header_menu__icon accTriger"></div>
+                    <ul class="header_menu__sublist accContent">
+                      <li class="header_menu__subitem"><a class="header_menu__link" href="#">Головные уборы</a></li>
+                      <li class="header_menu__subitem"><a class="header_menu__link" href="#">Перчатки</a></li>
+                      <li class="header_menu__subitem"><a class="header_menu__link" href="#">Шарфы и платки</a></li>
+                      <li class="header_menu__subitem"><a class="header_menu__link" href="#">Носки </a></li>
+                      <li class="header_menu__subitem"><a class="header_menu__link" href="#">Гетры</a></li>
+                      <li class="header_menu__subitem"><a class="header_menu__link" href="#">др</a></li>
+                    </ul>
+                  </div>
+                </li>
+                <li class="header_menu__item">
+                  <div class="header_menu__head"><a class="header_menu__label" href="#">БЕЛЬЕ</a>
+                    <div class="header_menu__icon accTriger"></div>
+                    <ul class="header_menu__sublist accContent">
+                      <li class="header_menu__subitem"><a class="header_menu__link" href="#">Разное</a></li>
+                    </ul>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="header_menu__body filterItem" data-filter="1">
+              <ul class="header_menu__list">
+                <li class="header_menu__item">
+                  <div class="header_menu__head"><a class="header_menu__label" href="#">ОДЕЖДА</a>
+                    <div class="header_menu__icon accTriger"></div>
+                    <ul class="header_menu__sublist accContent">
+                      <li class="header_menu__subitem"><a class="header_menu__link" href="#">Рубашки</a></li>
+                      <li class="header_menu__subitem"><a class="header_menu__link" href="#">Комбинезоны</a></li>
+                      <li class="header_menu__subitem"><a class="header_menu__link" href="#">Леггинсы</a></li>
+                      <li class="header_menu__subitem"><a class="header_menu__link" href="#">Куртки</a></li>
+                      <li class="header_menu__subitem"><a class="header_menu__link" href="#">Пальто</a></li>
+                      <li class="header_menu__subitem"><a class="header_menu__link" href="#">Плащи</a></li>
+                      <li class="header_menu__subitem"><a class="header_menu__link" href="#">Жилетки</a></li>
+                      <li class="header_menu__subitem"><a class="header_menu__link" href="#">Ветровки</a></li>
+                    </ul>
+                  </div>
+                </li>
+                <li class="header_menu__item">
+                  <div class="header_menu__head"><a class="header_menu__label" href="#">ОБУВЬ</a>
+                    <div class="header_menu__icon accTriger"></div>
+                    <ul class="header_menu__sublist accContent">
+                      <li class="header_menu__subitem"><a class="header_menu__link" href="#">Кроссовки</a></li>
+                      <li class="header_menu__subitem"><a class="header_menu__link" href="#">Шлепанцы</a></li>
+                    </ul>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="header_bottom">
+            <div class="header_bottom__wrap">
+              <div class="header_bottom__row">
+                <div class="header_bottom__column">
+                  <form class="header_list__form" action="#">
+                    <div class="header_list__input">
+                      <label class="header_list__link header_list__link--search_mod" for="search_input_mob">поиск</label>
+                      <div class="header_list__field">
+                        <input class="form_input__element" type="text" id="search_input_mob">
+                      </div>
+                    </div>
+                  </form>
+                </div>
+                <div class="header_bottom__column">
+                  <div class="header_languages">
+                    <ul class="header_languages__list"> 
+                      <li class="header_languages__item"> <a class="header_languages__link header_languages__link--active_state" href="#">ru</a></li>
+                      <li class="header_languages__item"> <a class="header_languages__link" href="#">ua</a></li>
+                      <li class="header_languages__item"> <a class="header_languages__link" href="#">en</a></li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <ul class="header_bottom__list">
+              <li class="header_bottom__item"><a class="header_bottom__link" href="#">DEHA</a></li>
+              <li class="header_bottom__item"><a class="header_bottom__link" href="#">American vintage</a></li>
+              <li class="header_bottom__item"><a class="header_bottom__link" href="#">george gina lucy</a></li>
+              <li class="header_bottom__item"><a class="header_bottom__link" href="#">birkenstock</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </header>
+    <div class="wrapper">
+      <div class="base">
+        <section class="section faq">
+          <div class="faq__breadcrumbs_wrap">
+                    <div class="breadcrumbs">
+                      <ul class="breadcrumbs__list">
+                        <li class="breadcrumbs__item"><a class="breadcrumbs__link" href="#">Главная</a></li>
+                        <li class="breadcrumbs__item"><a class="breadcrumbs__link" href="#">Популярные вопросы</a></li>
+                      </ul>
+                    </div>
+          </div>
+          <div class="section_in faq__in">
+            <h2 class="faq__title">Популярные вопросы</h2>
+            <div class="faq__wrapper">
+              <div class="faq_block">
+                <div class="faq_block__group">
+                  <h3 class="faq_block__title">Покупки</h3>
+                  <ul class="faq_block__list faqList">
+                    <li class="faq_block__item faqItem">
+                      <div class="faq_block__question faqTrigger">Вопрос от покупателя</div>
+                      <div class="faq_block__content faqContent"> <span>Оплата осуществляется наличными денежными средствами курьеру непосредственно при доставке заказа на адрес получателя. Выбрав данный способ оплаты, Вы получаете возможность рассмотреть и примерить заказанный товар. <br> Если какая-то позиция Вам не подошла, Вы можете просто вернуть ее курьеру, не оплачивая.</span></div>
+                    </li>
+                    <li class="faq_block__item faqItem">
+                      <div class="faq_block__question faqTrigger">Вопрос от покупателя</div>
+                      <div class="faq_block__content faqContent"> <span>Оплата осуществляется наличными денежными средствами курьеру непосредственно при доставке заказа на адрес получателя. Выбрав данный способ оплаты, Вы получаете возможность рассмотреть и примерить заказанный товар. <br> Если какая-то позиция Вам не подошла, Вы можете просто вернуть ее курьеру, не оплачивая.</span></div>
+                    </li>
+                    <li class="faq_block__item faqItem">
+                      <div class="faq_block__question faqTrigger">Вопрос от покупателя</div>
+                      <div class="faq_block__content faqContent"> <span>Оплата осуществляется наличными денежными средствами курьеру непосредственно при доставке заказа на адрес получателя. Выбрав данный способ оплаты, Вы получаете возможность рассмотреть и примерить заказанный товар. <br> Если какая-то позиция Вам не подошла, Вы можете просто вернуть ее курьеру, не оплачивая.</span></div>
+                    </li>
+                    <li class="faq_block__item faqItem">
+                      <div class="faq_block__question faqTrigger">Вопрос от покупателя</div>
+                      <div class="faq_block__content faqContent"> <span>Оплата осуществляется наличными денежными средствами курьеру непосредственно при доставке заказа на адрес получателя. Выбрав данный способ оплаты, Вы получаете возможность рассмотреть и примерить заказанный товар. <br> Если какая-то позиция Вам не подошла, Вы можете просто вернуть ее курьеру, не оплачивая.</span></div>
+                    </li>
+                    <li class="faq_block__item faqItem">
+                      <div class="faq_block__question faqTrigger">Вопрос от покупателя</div>
+                      <div class="faq_block__content faqContent"> <span>Оплата осуществляется наличными денежными средствами курьеру непосредственно при доставке заказа на адрес получателя. Выбрав данный способ оплаты, Вы получаете возможность рассмотреть и примерить заказанный товар. <br> Если какая-то позиция Вам не подошла, Вы можете просто вернуть ее курьеру, не оплачивая.</span></div>
+                    </li>
+                  </ul>
+                </div>
+                <div class="faq_block__group">
+                  <h3 class="faq_block__title">Возврат и обмен</h3>
+                  <ul class="faq_block__list faqList">
+                    <li class="faq_block__item faqItem">
+                      <div class="faq_block__question faqTrigger">Вопрос от покупателя</div>
+                      <div class="faq_block__content faqContent"><span>Оплата осуществляется наличными денежными средствами курьеру непосредственно при доставке заказа на адрес получателя. Выбрав данный способ оплаты, Вы получаете возможность рассмотреть и примерить заказанный товар. <br> Если какая-то позиция Вам не подошла, Вы можете просто вернуть ее курьеру, не оплачивая.</span></div>
+                    </li>
+                    <li class="faq_block__item faqItem">
+                      <div class="faq_block__question faqTrigger">Вопрос от покупателя</div>
+                      <div class="faq_block__content faqContent"><span>Оплата осуществляется наличными денежными средствами курьеру непосредственно при доставке заказа на адрес получателя. Выбрав данный способ оплаты, Вы получаете возможность рассмотреть и примерить заказанный товар. <br> Если какая-то позиция Вам не подошла, Вы можете просто вернуть ее курьеру, не оплачивая.</span></div>
+                    </li>
+                    <li class="faq_block__item faqItem">
+                      <div class="faq_block__question faqTrigger">Вопрос от покупателя</div>
+                      <div class="faq_block__content faqContent"><span>Оплата осуществляется наличными денежными средствами курьеру непосредственно при доставке заказа на адрес получателя. Выбрав данный способ оплаты, Вы получаете возможность рассмотреть и примерить заказанный товар. <br> Если какая-то позиция Вам не подошла, Вы можете просто вернуть ее курьеру, не оплачивая.</span></div>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <div class="faq_form">
+                <form class="faq_form__form" action="#">
+                  <div class="faq_form__title">Есть вопросы <br> или предложения? НАПИШИТЕ НАМ</div>
+                  <div class="faq_form__input_w">
+                    <div class="faq_form__field">
+                      <input class="faq_form__input" type="text" placeholder="Имя" required title="faq form">
+                    </div>
+                  </div>
+                  <div class="faq_form__input_w">
+                    <div class="faq_form__field">
+                      <input class="faq_form__input" type="email" placeholder="E-mail" required title="faq form">
+                    </div>
+                  </div>
+                  <div class="faq_form__select_block"><span class="faq_form__select_descr">Что Вас интересует:</span>
+                    <div class="form_select faq_form__select_w">
+                      <div class="faq_form__select_field">
+                        <select class="faq_form__select">
+                          <option value='{"title":"Вопрос"}'>Вопрос</option>
+                          <option value='{"title":"Ответ"}'>Ответ</option>
+                        </select>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="faq_form__textarea_w">
+                    <textarea class="faq_form__textarea" placeholder="Текст сообщения" required></textarea>
+                  </div>
+                  <button class="faq_form__button" type="submit">Отправить</button>
+                </form>
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
+      <footer class="footer">
+        <div class="footer__in">
+          <h3 class="footer__title">Будьте в курсе событий</h3>
+          <form class="footer_form">
+            <div class="footer_form__input_w">
+              <div class="footer_form__field">
+                <input class="footer_form__input" type="text" id="footer_form__input" placeholder="E-mail" required title="Footer form">
+              </div>
+            </div>
+            <button class="footer_form__btn_submit" type="submit" aria-label="submit button">
+              <svg class="icon icon_arrow_icon icon--size_mod">
+                <use xlink:href="images/sprite/sprite.svg#arrow_icon"></use>
+              </svg>
+            </button>
+          </form>
+          <nav class="footer_nav">
+            <ul class="footer_nav__list">
+              <li class="footer_nav__item"><a class="footer_nav__link" href="#">О нас</a></li>
+              <li class="footer_nav__item"><a class="footer_nav__link" href="#">Распространенные вопросы</a></li>
+              <li class="footer_nav__item"><a class="footer_nav__link" href="#">Бренды</a></li>
+            </ul>
+          </nav>
+          <div class="footer_bottom">
+            <div class="footer_bottom__item"><span>Все права защищены</span><span>© 2020 Allegria.com</span></div>
+            <div class="footer_bottom__item">Дизайн и разработка:</div>
+          </div>
+        </div>
+      </footer>
+    </div>
+    <div class="card_popup popupCard" id="popup_login">
+      <div class="card_popup__in">
+        <div class="card_popup__content_wrap popupCardContent">
+          <button class="card_popup__close popupCardClose" type="button" aria-label="close">
+            <div class="card_popup__close_icon">
+              <svg class="icon icon_close icon--size_mod">
+                <use xlink:href="images/sprite/sprite.svg#close"></use>
+              </svg>
+            </div>
+          </button>
+          <div class="card_popup__logon_wrap">
+            <h3 class="card_popup__title">вход</h3>
+            <form class="card_popup__form">
+              <div class="card_popup_form__block">
+                <div class="form_input__field">
+                  <input class="card_popup_form__input" type="text" id="card_popup_form__input" placeholder="E-mail" required title="Popup form">
+                </div>
+              </div>
+              <div class="card_popup_form__block_password">
+                <input class="card_popup_form__input card_popup_form__input--password_mod" type="password" placeholder="Пароль" id="card_popup_form__password">
+                <button class="card_popup__button_show_pass btnShowPass" type="button" aria-label="show password" data-input-id="card_popup_form__password">
+                  <svg class="icon icon_eye icon--size_mod">
+                    <use xlink:href="images/sprite/sprite.svg#eye"></use>
+                  </svg>
+                </button>
+              </div>
+              <button class="card_popup__button" type="submit">войти</button>
+            </form>
+            <ul class="card_popup__logon_list">
+              <li class="card_popup__logon_item"><a class="card_popup__logon_link" href="#">Забыли пароль</a></li>
+              <li class="card_popup__logon_item"><a class="card_popup__logon_link" href="#">У меня нет акаунта</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  <script defer src="js/app.js"></script></body>
+</html>
